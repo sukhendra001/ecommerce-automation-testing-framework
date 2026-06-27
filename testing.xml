@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="E-Commerce Automation Suite">
+
+    <test name="Smoke Tests">
+
+        <classes>
+
+            <!-- Login Module -->
+            <class name="com.sukhendra.tests.LoginTest"/>
+            <class name="com.sukhendra.tests.InvalidLoginTest"/>
+            <class name="com.sukhendra.tests.EmptyUsernameTest"/>
+            <class name="com.sukhendra.tests.EmptyPasswordTest"/>
+            <class name="com.sukhendra.tests.LockedUserLoginTest"/>
+
+            <!-- Products Module -->
+            <class name="com.sukhendra.tests.ProductsTest"/>
+            <class name="com.sukhendra.tests.AddMultipleProductsTest"/>
+            <class name="com.sukhendra.tests.RemoveProductTest"/>
+
+            <!-- Cart Module -->
+            <class name="com.sukhendra.tests.CartTest"/>
+            <class name="com.sukhendra.tests.ContinueShoppingTest"/>
+            <class name="com.sukhendra.tests.EmptyCartTest"/>
+
+            <!-- Checkout Module -->
+            <class name="com.sukhendra.tests.CheckoutInformationPageTest"/>
+            <class name="com.sukhendra.tests.CheckoutOverviewPageTest"/>
+            <class name="com.sukhendra.tests.CheckoutTest"/>
+
+            <!-- Logout Module -->
+            <class name="com.sukhendra.tests.LogoutTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
